@@ -3,6 +3,7 @@ fn add(a: i64, b: i64) -> i64 {
     a + b
 }
 
+// Day 2
 #[rustler::nif]
 fn invalid_product(number: i64) -> bool {
     let s: String = number.to_string();
@@ -46,5 +47,7 @@ fn has_repeating_pattern(number: i64) -> bool {
 
     false
 }
+
+// Day 3
 
 rustler::init!("Elixir.Aoc2025");

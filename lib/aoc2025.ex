@@ -3,6 +3,8 @@ defmodule Aoc2025 do
 
   # When your NIF is loaded, it will override these functions.
   def add(_a, _b), do: :erlang.nif_error(:nif_not_loaded)
+
+  # Day 2
   def invalid_product(_number), do: :erlang.nif_error(:nif_not_loaded)
   def has_repeating_pattern(_number), do: :erlang.nif_error(:nif_not_loaded)
 end
