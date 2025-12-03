@@ -5,7 +5,8 @@ Benchee.run(
   },
   warmup: 2,
   time: 5,
-  save: [path: "bench/results/d2.benchee", tag: "current"],
+  load: "bench/results/d2.benchee",
+  save: [path: "bench/results/d2.benchee", tag: "rust"],
   formatters: [
     Benchee.Formatters.Console,
     {Benchee.Formatters.HTML, file: "bench/results/d2.html"}
