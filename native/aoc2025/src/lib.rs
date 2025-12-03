@@ -5,8 +5,8 @@ fn add(a: i64, b: i64) -> i64 {
 
 #[rustler::nif]
 fn invalid_product(number: i64) -> bool {
-    let s = number.to_string();
-    let len = s.len();
+    let s: String = number.to_string();
+    let len: usize = s.len();
 
     if !len.is_multiple_of(2) {
         return false;
@@ -23,13 +23,13 @@ fn has_repeating_pattern(number: i64) -> bool {
         return false;
     }
 
-    let s = number.to_string();
-    let len = s.len();
+    let s: String = number.to_string();
+    let len: usize = s.len();
 
     for pattern_len in 1..=len / 2 {
         if len.is_multiple_of(pattern_len) {
-            let pattern = &s[..pattern_len];
-            let mut all_match = true;
+            let pattern: &str = &s[..pattern_len];
+            let mut all_match: bool = true;
 
             for i in (0..len).step_by(pattern_len) {
                 if &s[i..i + pattern_len] != pattern {
