@@ -5,7 +5,7 @@ defmodule Aoc2025.D3Test do
     assert Aoc2025.D3.p1("inputs/d3ex.txt") == 357
   end
 
-  # test "part 2 example" do
-  #   assert Aoc2025.D3.p2("inputs/d3ex.txt") == 6
-  # end
+  test "part 2 example" do
+    assert Aoc2025.D3.p2("inputs/d3ex.txt") == 3_121_910_778_619
+  end
 end
