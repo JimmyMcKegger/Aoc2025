@@ -1,6 +1,4 @@
 defmodule Aoc2025.D7 do
-  require IEx
-
   @splitter "^"
 
   def p1(file \\ "inputs/d7.txt") do

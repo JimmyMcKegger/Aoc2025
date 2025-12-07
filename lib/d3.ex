@@ -1,6 +1,4 @@
 defmodule Aoc2025.D3 do
-  require IEx
-
   @needed 12
 
   def p1(file \\ "inputs/d3.txt") do
