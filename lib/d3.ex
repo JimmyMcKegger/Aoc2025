@@ -4,13 +4,13 @@ defmodule Aoc2025.D3 do
   @needed 12
 
   def p1(file \\ "inputs/d3.txt") do
-    Aoc2025.Utils.read_file(file)
+    Utils.read_file(file)
     |> Enum.map(&to_highest_pair(&1))
     |> Enum.sum()
   end
 
   def p2(file \\ "inputs/d3.txt") do
-    Aoc2025.Utils.read_file(file)
+    Utils.read_file(file)
     |> Enum.map(&to_highest_dozen(&1))
     |> Enum.sum()
   end

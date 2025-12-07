@@ -1,7 +1,7 @@
 defmodule Aoc2025.D4 do
   def p1(file \\ "inputs/d4.txt") do
     grid =
-      Aoc2025.Utils.read_file(file)
+      Utils.read_file(file)
       |> to_grid()
 
     rows = Arrays.size(grid)

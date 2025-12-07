@@ -3,7 +3,7 @@ defmodule Aoc2025.D2 do
   def p2(file \\ "inputs/d2.txt"), do: count_products(file, all_patterns: true)
 
   def count_products(file, opts) do
-    Aoc2025.Utils.read_file(file, ",")
+    Utils.read_file(file, ",")
     |> Enum.reduce(0, &invalid_ids(&1, &2, opts[:all_patterns]))
   end
 

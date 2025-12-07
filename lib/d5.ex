@@ -58,7 +58,7 @@ defmodule Aoc2025.D5 do
   end
 
   defp parse_ingredients(file) do
-    Aoc2025.Utils.read_file(file, "\n\n")
+    Utils.read_file(file, "\n\n")
     |> Enum.map(&String.split(&1, "\n", trim: true))
   end
 end

@@ -1,13 +1,13 @@
 defmodule Aoc2025.D6 do
   def p1(file \\ "inputs/d6.txt") do
-    Aoc2025.Utils.read_file(file)
+    Utils.read_file(file)
     |> to_grid()
     |> transpose()
     |> Enum.reduce(0, &calculate(&1, &2))
   end
 
   def p2(file \\ "inputs/d6.txt") do
-    Aoc2025.Utils.read_file(file)
+    Utils.read_file(file)
     |> parse_by_char_cols()
     |> Enum.reduce(0, &calculate_properly(&1, &2))
   end

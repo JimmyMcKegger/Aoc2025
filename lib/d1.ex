@@ -1,16 +1,14 @@
 defmodule Aoc2025.D1 do
-  import Aoc2025.Utils
-
   @start 50
 
   def p1(file \\ "inputs/d1.txt") do
-    read_file(file)
+    Utils.read_file(file)
     |> Enum.reduce({@start, 0}, &dial(&1, &2))
     |> elem(1)
   end
 
   def p2(file \\ "inputs/d1.txt") do
-    read_file(file)
+    Utils.read_file(file)
     |> Enum.reduce({@start, 0}, &dial(&1, &2, true))
     |> elem(1)
   end
