@@ -2,7 +2,6 @@ defmodule Aoc2025.D7 do
   @splitter "^"
 
   def p1(file \\ "inputs/d7.txt") do
-    # tachyon manifold
     diagram = parse_input(file)
 
     start = diagram[0] |> Enum.find_index(&(&1 == "S"))
