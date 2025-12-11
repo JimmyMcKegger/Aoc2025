@@ -1,6 +1,4 @@
 defmodule Aoc2025.D11 do
-  require Logger
-
   def p1(file \\ "inputs/d11.txt") do
     g = build_graph(file)
 
