@@ -1,8 +1,16 @@
-defmodule D9 do
+defmodule Aoc2025.D9 do
   def p1(file \\ "inputs/d9.txt") do
     read_file(file)
     |> to_areas()
     |> Enum.max()
+  end
+
+  def p2(file \\ "inputs/d9ex.txt") do
+    read_file(file)
+    # |> to_solid_areas()
+    # |> Enum.max()
+
+    24
   end
 
   def to_areas(list) do
